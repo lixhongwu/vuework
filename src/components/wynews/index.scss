@@ -3,23 +3,29 @@
   @return($px / $rem) + rem;
 }
 .head{
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
   background-color: red;
   height: px2rem(40px);
   width: 100%;
-  padding-left: px2rem(23px);
-  .head-item{
+  padding-left: px2rem(10px);
+  li{
     float: left;
     margin-left: px2rem(20px);
     line-height: px2rem(40px);
     font-size: px2rem(16px);
     color: #ffcdce;
-    &:nth-child(2){
+  }
+  .active{
       color: #fff;
       font-size: px2rem(17px);
     }
-  }
 }
 .banner-cotent{
+  margin-top: px2rem(40px);
   position: relative;
   .banner{
     display: block;

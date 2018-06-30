@@ -2,12 +2,12 @@
   <div>
     <div class="head">
       <ul class="head-content">
-        <li class="head-item">推荐</li>
-        <li class="head-item">新闻</li>
-        <li class="head-item">娱乐</li>
-        <li class="head-item">体育</li>
-        <li class="head-item">图片</li>
-        <li class="head-item">财经</li>
+        <router-link to="/news/recomond" tag="li" active-class="active">推荐</router-link>
+        <router-link to="/news/news" tag="li" active-class="active">新闻</router-link>
+        <router-link to="/news/yule" tag="li" active-class="active">娱乐</router-link>
+        <router-link to="/news/finance" tag="li" active-class="active">财经</router-link>
+        <router-link to="/news/sports" tag="li" active-class="active">体育</router-link>
+        <router-link to="/news/pepole" tag="li" active-class="active">民生</router-link>
       </ul>
     </div>
     <div class="banner-cotent">
@@ -54,12 +54,16 @@
   </div>
 </template>
 <script>
+import { Header } from 'mint-ui'
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    Header
   }
 }
 </script>
